@@ -16,17 +16,17 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               专业的金融服务提供商，为您提供全方位的金融解决方案
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-blue-500 transition-colors hover-scale">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-blue-500 transition-colors hover-scale">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-blue-500 transition-colors hover-scale">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
+            {/*<div className="flex space-x-4">*/}
+            {/*  <a href="#" className="hover:text-blue-500 transition-colors hover-scale">*/}
+            {/*    <Facebook className="h-5 w-5" />*/}
+            {/*  </a>*/}
+            {/*  <a href="#" className="hover:text-blue-500 transition-colors hover-scale">*/}
+            {/*    <Twitter className="h-5 w-5" />*/}
+            {/*  </a>*/}
+            {/*  <a href="#" className="hover:text-blue-500 transition-colors hover-scale">*/}
+            {/*    <Linkedin className="h-5 w-5" />*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </div>
 
           {/* Quick Links */}

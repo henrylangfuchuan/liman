@@ -6,7 +6,7 @@ export default function ContactInfo() {
     {
       icon: <Mail className="h-6 w-6 text-blue-600" />,
       title: '电子邮件',
-      content: 'contact@financecore.com',
+      content: 'anhuilimavip@163.com',
       link: 'mailto:contact@financecore.com'
     },
     {
@@ -18,7 +18,7 @@ export default function ContactInfo() {
     {
       icon: <MapPin className="h-6 w-6 text-blue-600" />,
       title: '地址',
-      content: '上海市浦东新区陆家嘴金融中心',
+      content: '合肥市新站区淮海大道路1188号',
       link: null
     }
   ];

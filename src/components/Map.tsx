@@ -12,12 +12,11 @@ declare global {
 
 const Map: React.FC = () => {
   useEffect(() => {
-    // 如果 AMap 已经加载过，就不再加载
-    if (window.AMap) return;
+    if (window.AMap) return; // 如果已经加载，不再重复加载
 
     // 配置安全设置
     window._AMapSecurityConfig = {
-      securityJsCode: 'b022112eec32f459bd3a1a36044398d2'
+      securityJsCode: 'b022112eec32f459bd3a1a36044398d2',
     };
 
     // 动态加载高德地图的 loader.js 脚本
@@ -26,49 +25,49 @@ const Map: React.FC = () => {
     script.async = true;
     document.head.appendChild(script);
 
+    let map: any;
+
     script.onload = () => {
-      // 加载 AMap 库
-      window.AMapLoader.load({
-        key: 'b9636ec94b92a59fed5b7903c346d814',  // 替换成你自己的高德 API Key
-        version: '2.0'
-      }).then((AMap: any) => {
-        // 初始化地图
-        const map = new AMap.Map('map-container', {
-          zoom: 16,  // 设置默认缩放级别
-          center: [121.5, 31.23],  // 上海陆家嘴的坐标
-          viewMode: '3D',  // 3D视图
-        });
+      setTimeout(() => {
+        window.AMapLoader.load({
+          key: 'b9636ec94b92a59fed5b7903c346d814',
+          version: '2.0',
+        }).then((AMap: any) => {
+          map = new AMap.Map('map-container', {
+            zoom: 16,
+            center: [117.30301, 31.829231],
+            viewMode: '3D',
+          });
 
-        // 添加一个标记
-        const marker = new AMap.Marker({
-          position: [121.5, 31.23],  // 标记的位置
-          title: 'FinanceCore总部',  // 标记的标题
+          const marker = new AMap.Marker({
+            position: [121.5, 31.23],
+            title: 'FinanceCore总部',
+          });
+          map.add(marker);
+        }).catch((error: any) => {
+          console.error('高德地图加载失败', error);
         });
-        map.add(marker);
-
-        // 启用地图插件（例如工具条和比例尺）
-        map.plugin(['AMap.ToolBar', 'AMap.Scale'], () => {
-          map.addControl(new AMap.ToolBar());
-          map.addControl(new AMap.Scale());
-        });
-      }).catch((error: any) => {
-        console.error('高德地图加载失败', error);
-      });
+      }, 100); // 延迟加载地图
     };
 
-    // 清理操作
     return () => {
+      if (map) {
+        map.destroy(); // 销毁地图实例
+      }
       if (document.head.contains(script)) {
         document.head.removeChild(script);
       }
     };
-  }, []);  // 空依赖数组，确保只加载一次
+  }, []); // 空依赖数组
 
   return (
       <div
-          id="map-container"  // 地图容器的id
-          className="w-full h-[400px] rounded-lg shadow-lg animate-fade-in mt-8"  // 自定义样式
-          style={{ animationDelay: '0.4s',height: '400px', width: '100%' }}  // 动画延时
+          id="map-container"
+          style={{
+            height: '400px',
+            width: '100%',
+          }}
+          className="w-full h-[400px] rounded-lg shadow-lg animate-fade-in mt-8"
       />
   );
 };
