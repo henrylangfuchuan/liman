@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactInfo from './ContactInfo';
-import Map from './Map';
+import MapContainer from "./MapContainer.tsx";
 
 export default function Contact() {
   return (
@@ -17,7 +17,7 @@ export default function Contact() {
         
         <div className="mt-20">
           <ContactInfo />
-          <Map />
+          <MapContainer />
         </div>
       </div>
     </div>
