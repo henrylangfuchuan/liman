@@ -1,4 +1,3 @@
-import React from 'react';
 import { TrendingUp, Shield, Users } from 'lucide-react';
 import HomeBanner from '../images/home_banner.avif'
 
@@ -20,10 +19,10 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center animate-fade-in">
             <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-              专业金融服务，助力您的成功
+              专业信息咨询服务
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base text-gray-200 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              为企业和个人提供全方位的金融解决方案，助力实现财务目标
+              通过科技赋能财经资讯，提供前沿深度分析与智能化服务
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
@@ -43,9 +42,9 @@ export default function Hero() {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               {[
-                { Icon: TrendingUp, text: "专业投资建议" },
-                { Icon: Shield, text: "资金安全保障" },
-                { Icon: Users, text: "专业团队服务" }
+                { Icon: TrendingUp, text: "财经资讯服务" },
+                { Icon: Shield, text: "实现服务数字化" },
+                { Icon: Users, text: "实现服务智能化" }
               ].map((item, index) => (
                 <div
                   key={index}

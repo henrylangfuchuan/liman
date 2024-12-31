@@ -33,7 +33,7 @@ export default function Services() {
             我们的服务
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            提供全面的金融服务解决方案
+            提供全面的信息咨询服务解决方案
           </p>
         </div>
         <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">

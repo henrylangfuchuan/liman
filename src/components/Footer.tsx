@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="ml-2 text-xl font-bold text-white">安徽利曼网络科技</span>
             </Link>
             <p className="text-gray-400 mb-4">
-              专业的金融服务提供商，为您提供全方位的金融解决方案
+              通过科技赋能财经资讯服务数智化，通过技术支持、数据聚合、深度分析，竭力为不同人群提供紧跟时代前沿的深度财经观点
             </p>
             {/*<div className="flex space-x-4">*/}
             {/*  <a href="#" className="hover:text-blue-500 transition-colors hover-scale">*/}

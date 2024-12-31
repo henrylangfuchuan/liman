@@ -12,21 +12,21 @@ export default function About() {
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               {/*成立于2010年，*/}
-              安徽利曼网络科技是一家专注于提供专业金融服务的公司。我们拥有经验丰富的金融专家团队，致力于为客户提供最优质的金融解决方案。
+              安徽利曼网络科技是一家专注于提供专业金融服务的公司。自成立以来，公司专注于通过科技赋能财经资讯服务，提供深度分析和投资辅助价值，打造智能高效的互联网信息平台。如今，已形成完善的专业信息服务体系，市场地位和品牌影响力持续提升，正成长为具有核心竞争力的金融信息咨询服务商。
             </p>
-            <div className="mt-8">
-              <div className="flex items-center hover-scale">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
-                    <span className="text-2xl font-bold">10+</span>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-gray-900">年行业经验</h3>
-                  <p className="mt-2 text-gray-600">持续为客户创造价值</p>
-                </div>
-              </div>
-            </div>
+            {/*<div className="mt-8">*/}
+            {/*  <div className="flex items-center hover-scale">*/}
+            {/*    <div className="flex-shrink-0">*/}
+            {/*      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">*/}
+            {/*        <span className="text-2xl font-bold">10+</span>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*    <div className="ml-4">*/}
+            {/*      <h3 className="text-lg font-medium text-gray-900">年行业经验</h3>*/}
+            {/*      <p className="mt-2 text-gray-600">持续为客户创造价值</p>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
           <div className="mt-10 lg:mt-0 animate-fade-in">
             <img
