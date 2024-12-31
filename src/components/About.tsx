@@ -1,4 +1,5 @@
 import React from 'react';
+import about from '../images/about.avif'
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
           <div className="mt-10 lg:mt-0 animate-fade-in">
             <img
               className="rounded-lg shadow-xl hover-lift"
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              src={about}
               alt="团队办公"
             />
           </div>

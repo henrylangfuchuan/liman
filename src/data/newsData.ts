@@ -1,3 +1,6 @@
+import newItem1 from '../images/new_item1.avif';
+import newItem2 from '../images/new_item2.avif';
+import newItem3 from '../images/new_item3.avif';
 export interface NewsItem {
   id: string;
   date: string;
@@ -13,7 +16,7 @@ export const newsItems: NewsItem[] = [
     date: '2024-03-15',
     title: '2024年金融市场展望分析',
     summary: '深入解析全球经济趋势，为投资者提供市场洞察',
-    image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: newItem1,
     content: `在全球经济持续复苏的背景下，2024年金融市场展现出新的机遇与挑战。本文将从多个维度深入分析当前市场形势，为投资者提供专业的市场洞察。
 
 主要观点：
@@ -30,7 +33,7 @@ export const newsItems: NewsItem[] = [
     date: '2024-03-10',
     title: '数字金融创新服务升级',
     summary: '推出全新智能投顾系统，提供个性化投资建议',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: newItem2,
     content: `FinanceCore正式推出新一代智能投顾系统，运用人工智能技术，为客户提供更精准的投资建议。
 
 系统特点：
@@ -47,7 +50,7 @@ export const newsItems: NewsItem[] = [
     date: '2024-03-05',
     title: '企业金融解决方案发布',
     summary: '为中小企业提供全方位的金融支持服务',
-    image: 'https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+    image: newItem3,
     content: `为支持中小企业发展，FinanceCore推出全新的企业金融服务方案，提供一站式金融解决方案。
 
 服务内容：

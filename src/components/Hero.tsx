@@ -1,5 +1,6 @@
 import React from 'react';
 import { TrendingUp, Shield, Users } from 'lucide-react';
+import HomeBanner from '../images/home_banner.avif'
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+          src={HomeBanner}
           alt="Financial District"
           className="w-full h-full object-cover"
         />
