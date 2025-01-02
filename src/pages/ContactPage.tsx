@@ -8,7 +8,7 @@ export default function ContactPage() {
     <>
       <PageBanner
         title="联系我们"
-        subtitle="随时为您提供专业咨询服务"
+        subtitle="随时为您提供专业信息咨询服务"
         backgroundImage={contactBanner}
       />
       <section className="bg-white">

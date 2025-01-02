@@ -5,23 +5,23 @@ export default function Services() {
   const services = [
     {
       icon: <Briefcase className="h-8 w-8 text-blue-600" />,
-      title: '投资管理',
-      description: '专业的投资组合管理，为您的资产增值保驾护航'
+      title: '财经资讯服务',
+      description: 'FINANCIAL INFORMATION SERVICE'
     },
     {
       icon: <PieChart className="h-8 w-8 text-blue-600" />,
-      title: '财务规划',
-      description: '个性化的财务规划方案，助您实现人生目标'
+      title: '实现服务数字化',
+      description: 'REALIZE SERVICE DIGITALIZATION'
     },
     {
       icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-      title: '理财产品',
-      description: '多元化的理财产品选择，满足不同风险偏好'
+      title: '实现服务智能化',
+      description: 'REALIZE INTELLIGENT SERVICE'
     },
     {
       icon: <Building className="h-8 w-8 text-blue-600" />,
-      title: '企业金融',
-      description: '全方位的企业金融服务，支持企业持续发展'
+      title: '为客户创造价值',
+      description: 'CREATE VALUE FOR CUSTOMERS'
     }
   ];
 

@@ -8,7 +8,7 @@ export default function NewsPage() {
     <>
       <PageBanner
         title="新闻资讯"
-        subtitle="及时了解金融市场动态"
+        subtitle="及时了解财经市场动态"
         backgroundImage={newBanner}
       />
       <section className="bg-white">

@@ -8,7 +8,7 @@ export default function AboutPage() {
     <>
       <PageBanner
         title="关于我们"
-        subtitle="专业团队，值得信赖的金融伙伴"
+        subtitle="专业团队，值得信赖的合作伙伴"
         backgroundImage={aboutBanner}
       />
       <section className="bg-white">
